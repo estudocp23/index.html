@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Perguntas de Biologia</title>
+    <meta name="description" content="um quiz interativo de biologia">
+    <style>
+        section {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 20px;
+        }
+
+        .resultado {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        button {
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Perguntas de Biologia/Plantas</h1>
+        <p>Teste de conhecimento</p>
+        <div style="color: rgb(206, 19, 19); font-weight: bold;">
+            RESPONDA, E NO FINAL OLHE O GABARITO E MOSTRE O RESULTADO NO PV.
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2><i>Pergunta-1</i></h2>
+            <p><i>As briófitas, como os musgos, são plantas de pequeno porte que não possuem vasos condutores de seiva.
+                    Como ocorre o transporte de água e nutrientes nessas plantas?</i></p>
+            <form id="form1">
+                <input type="radio" id="p1a" name="p1" value="errado"> <label for="p1a">Através do xilema e do
+                    floema.</label><br>
+                <input type="radio" id="p1b" name="p1" value="correto"> <label for="p1b">Por difusão célula a
+                    célula.</label><br>
+                <input type="radio" id="p1c" name="p1" value="errado"> <label for="p1c">Por meio de raízes profundas que
+                    alcançam o lençol freático.</label><br>
+                <input type="radio" id="p1d" name="p1" value="errado"> <label for="p1d">Através de poros chamados
+                    lenticelas presentes no caule.</label><br><br>
+                <button type="button" onclick="verificar('p1', 'res1', 'As briófitas são avasculares!')">Verificar
+                    Resposta</button>
+            </form>
+            <p id="res1" class="resultado"></p>
+        </section>
+
+        <section>
+            <h2>Pergunta-2</h2>
+            <p><i>As samambaias pertencem ao grupo das Pteridófitas. Diferente dos musgos, elas conseguem atingir
+                    tamanhos maiores porque possuem:</i></p>
+            <form id="form2">
+                <input type="radio" id="p2a" name="p2" value="errado"> <label for="p2a">Sementes protegidas por
+                    frutos</label><br>
+                <input type="radio" id="p2b" name="p2" value="errado"> <label for="p2b">Flores coloridas que atraem
+                    polinizadores</label><br>
+                <input type="radio" id="p2c" name="p2" value="correto"> <label for="p2c">Tecidos condutores de seiva
+                    (vasos vasculares).</label><br>
+                <input type="radio" id="p2d" name="p2" value="errado"> <label for="p2d">Independência total da água para
+                    a reprodução.</label><br><br>
+                <button type="button"
+                    onclick="verificar('p2', 'res2', 'As samambaias possuem vasos vasculares!')">Verificar
+                    Resposta</button>
+            </form>
+            <p id="res2" class="resultado"></p>
+        </section>
+
+        <section>
+            <h2>Pergunta-3</h2>
+            <p><i>Qual estrutura das Gimnospermas permitiu a independência da água para o encontro dos gametas?</i></p>
+            <form id="form3">
+                <input type="radio" id="p3a" name="p3" value="errado"> <label for="p3a">O fruto.</label><br>
+                <input type="radio" id="p3b" name="p3" value="correto"> <label for="p3b">O grão de pólen.</label><br>
+                <input type="radio" id="p3c" name="p3" value="errado"> <label for="p3c">O esporo flagelado.</label><br>
+                <input type="radio" id="p3d" name="p3" value="errado"> <label for="p3d">O rizoma.</label><br><br>
+                <button type="button"
+                    onclick="verificar('p3', 'res3', 'O grão de pólen permitiu a polinização pelo vento!')">Verificar
+                    Resposta</button>
+            </form>
+            <p id="res3" class="resultado"></p>
+        </section>
+
+        <section>
+            <h2>Pergunta-4</h2>
+            <p><i>As Angiospermas são o grupo vegetal mais diverso. Quais são as duas características exclusivas desse
+                    grupo?</i></p>
+            <form id="form4">
+                <input type="radio" id="p4a" name="p4" value="errado"> <label for="p4a">Sementes e vasos
+                    condutores.</label><br>
+                <input type="radio" id="p4b" name="p4" value="errado"> <label for="p4b">Raízes pivotantes e
+                    estômatos.</label><br>
+                <input type="radio" id="p4c" name="p4" value="correto"> <label for="p4c">Flores verdadeiras e
+                    frutos.</label><br>
+                <input type="radio" id="p4d" name="p4" value="errado"> <label for="p4d">Clorofila e parede
+                    celular.</label><br><br>
+                <button type="button" onclick="verificar('p4', 'res4', 'Angiospermas têm flores e frutos!')">Verificar
+                    Resposta</button>
+            </form>
+            <p id="res4" class="resultado"></p>
+        </section>
+
+        <section>
+            <h2>Pergunta-5</h2>
+            <p><i>O tecido responsável pelo transporte da seiva bruta (água e sais) das raízes às folhas é o:</i></p>
+            <form id="form5">
+                <input type="radio" id="p5a" name="p5" value="correto"> <label for="p5a">Xilema.</label><br>
+                <input type="radio" id="p5b" name="p5" value="errado"> <label for="p5b">Floema.</label><br>
+                <input type="radio" id="p5c" name="p5" value="errado"> <label for="p5c">Parênquima.</label><br>
+                <input type="radio" id="p5d" name="p5" value="errado"> <label for="p5d">Colênquima.</label><br><br>
+                <button type="button"
+                    onclick="verificar('p5', 'res5', 'O xilema transporta a seiva mineral!')">Verificar
+                    Resposta</button>
+            </form>
+            <p id="res5" class="resultado"></p>
+        </section>
+
+        <section>
+            <h2>Pergunta-6</h2>
+            <p><i>Os estômatos são encontrados nas folhas. Qual é a sua principal função?</i></p>
+            <form id="form6">
+                <input type="radio" id="p6a" name="p6" value="errado"> <label for="p6a">Transportar seiva
+                    bruta.</label><br>
+                <input type="radio" id="p6b" name="p6" value="errado"> <label for="p6b">Transportar seiva
+                    elaborada.</label><br>
+                <input type="radio" id="p6c" name="p6" value="correto"> <label for="p6c">Controlar trocas gasosas e
+                    transpiração.</label><br>
+                <input type="radio" id="p6d" name="p6" value="errado"> <label for="p6d">Apenas proteção
+                    térmica.</label><br><br>
+                <button type="button"
+                    onclick="verificar('p6', 'res6', 'Eles abrem e fecham para a planta respirar e transpirar!')">Verificar
+                    Resposta</button>
+            </form>
+            <p id="res6" class="resultado"></p>
+        </section>
+    </main>
+
+    <script>
+        function verificar(nomeGrupo, idExibicao, mensagemErro) {
+            const resposta = document.querySelector(`input[name='${nomeGrupo}']:checked`);
+            const campoMensagem = document.getElementById(idExibicao);
+
+            if (!resposta) {
+                alert("Por favor, selecione uma opção!");
+                return;
+            }
+
+            if (resposta.value === "correto") {
+                campoMensagem.innerHTML = "✅ Parabéns! Você acertou.";
+                campoMensagem.style.color = "green";
+            } else {
+                campoMensagem.innerHTML = `❌ Errou. ${mensagemErro}`;
+                campoMensagem.style.color = "red";
+            }
+        }
+    </script>
+</body>
+
+</html>
